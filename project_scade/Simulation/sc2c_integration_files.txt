@@ -1,0 +1,43 @@
+*****************************
+*** Generated KCG H/Ads files ***
+*****************************
+SM_itera_State_machine_iterator.h
+kcg_types.h
+kcg_consts.h
+kcg_sensors.h
+
+*****************************
+*** Generated KCG C/Adb files ***
+*****************************
+SM_itera_State_machine_iterator.c
+kcg_types.c
+kcg_consts.c
+
+*****************************
+*** Code Integration C Files ***
+*****************************
+Prova_1_mapping.c
+Prova_1_type.c
+$(SCADE)\lib\C\SmuPredefConv.c
+$(SCADE)\lib\C\SmuConfig.c
+$(SCADE)\lib\C\SmuTypes.c
+$(SCADE)\lib\C\SmuLib.c
+$(SCADE)\lib\C\SmuVTable.c
+
+*****************************
+*** Generated SC2C Files ***
+*****************************
+user_macros.h
+kcg_imported_types.h
+
+*****************************
+*** Include Directories ***
+*****************************
+$(SCADE)\libraries\SC65\libmathext
+.
+$(SCADE)
+$(SCADE)\include
+$(SCADE)\include\C
+$(SCADE)\include\Ada
+$(SCADE)\lib\Ada
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="State_machine_iterator">
+			<declarations>
+				<Operator name="SM_itera" href="Operator12.xscade"/>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/4c0c/5113/17FC/685a7a8d5a20" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/4c0d/5113/17FC/685a7a8d195b" blockKind="constants"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/4c0e/5113/17FC/685a7a8d7293" blockKind="types"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/4c0f/5113/17FC/685a7a8d7125" blockKind="sensors"/>
+					</diagrams>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

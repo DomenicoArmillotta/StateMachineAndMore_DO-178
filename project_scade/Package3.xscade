@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="Iterator_with_random">
+			<declarations>
+				<Constant name="m">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="2147483647"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4c83/6D47/4B04/68553b721d02"/>
+					</pragmas>
+				</Constant>
+				<Constant name="c">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="12345"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4c75/6D47/4B04/68553b724d97"/>
+					</pragmas>
+				</Constant>
+				<Constant name="a">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="1103515245"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4c67/6D47/4B04/68553b72473e"/>
+					</pragmas>
+				</Constant>
+				<Operator name="Random" href="Random.xscade"/>
+				<Operator name="CorrectingOperator" href="Operator24.xscade"/>
+				<Operator name="Iterator_function" href="Operator33.xscade"/>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/4b1a/6D47/4B04/68553b325090" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/4b1b/6D47/4B04/68553b3252b8" blockKind="constants"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/4b1c/6D47/4B04/68553b3261ac" blockKind="types"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/4b1d/6D47/4B04/68553b323eb8" blockKind="sensors"/>
+					</diagrams>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

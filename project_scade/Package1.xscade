@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="State_machine">
+			<declarations>
+				<Constant name="a">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="1103515245"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4d92/77E0/23E8/685519893a0"/>
+					</pragmas>
+				</Constant>
+				<Constant name="c">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="12345"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4da3/77E0/23E8/6855199c65fa"/>
+					</pragmas>
+				</Constant>
+				<Constant name="m">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int64"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="2147483647"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4db4/77E0/23E8/685519ab582d"/>
+					</pragmas>
+				</Constant>
+				<Operator name="SM" href="Operator11.xscade"/>
+				<Operator name="Somma" href="Operator23.xscade"/>
+				<Operator name="Random" href="Operator32.xscade"/>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/49d7/48C8/4CE0/684fec2b2681" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/49d8/48C8/4CE0/684fec2b393e" blockKind="constants"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/49d9/48C8/4CE0/684fec2b554a" blockKind="types"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/49da/48C8/4CE0/684fec2b4d93" blockKind="sensors"/>
+					</diagrams>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

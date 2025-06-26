@@ -1,0 +1,66 @@
+#############################################################
+######    Begin of Makefile
+#############################################################
+
+SCADE=C:\Program Files\ANSYS Inc\v251\SCADE\SCADE\.
+
+SHELL=cmd.exe
+
+C_FLAGS = -pedantic
+
+all: State_machine_iterator__SM_itera.exe State_machine_iterator__SM_itera.dll 
+
+win64/SM_itera_State_machine_iterator.o: SM_itera_State_machine_iterator.c
+	gcc -I"$(SCADE)\libraries\SC65\libmathext" -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" $(C_FLAGS) -DBUILD_DLL -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "SM_itera_State_machine_iterator.c" -o "win64\SM_itera_State_machine_iterator.o"
+
+win64/kcg_types.o: kcg_types.c
+	gcc -I"$(SCADE)\libraries\SC65\libmathext" -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" $(C_FLAGS) -DBUILD_DLL -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "kcg_types.c" -o "win64\kcg_types.o"
+
+win64/kcg_consts.o: kcg_consts.c
+	gcc -I"$(SCADE)\libraries\SC65\libmathext" -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" $(C_FLAGS) -DBUILD_DLL -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "kcg_consts.c" -o "win64\kcg_consts.o"
+
+win64/Prova_1_mapping.o: Prova_1_mapping.c
+	gcc -I"$(SCADE)\libraries\SC65\libmathext" -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" $(C_FLAGS) -DBUILD_DLL -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "Prova_1_mapping.c" -o "win64\Prova_1_mapping.o"
+
+win64/Prova_1_type.o: Prova_1_type.c
+	gcc -I"$(SCADE)\libraries\SC65\libmathext" -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" $(C_FLAGS) -DBUILD_DLL -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "Prova_1_type.c" -o "win64\Prova_1_type.o"
+
+win64/SmuPredefConv.o: C:/Program\ Files/ANSYS\ Inc/v251/SCADE/SCADE/lib/C/SmuPredefConv.c
+	gcc -I"$(SCADE)\libraries\SC65\libmathext" -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" $(C_FLAGS) -DBUILD_DLL -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\C\SmuPredefConv.c" -o "win64\SmuPredefConv.o"
+
+win64/SmuConfig.o: C:/Program\ Files/ANSYS\ Inc/v251/SCADE/SCADE/lib/C/SmuConfig.c
+	gcc -I"$(SCADE)\libraries\SC65\libmathext" -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" $(C_FLAGS) -DBUILD_DLL -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\C\SmuConfig.c" -o "win64\SmuConfig.o"
+
+win64/SmuTypes.o: C:/Program\ Files/ANSYS\ Inc/v251/SCADE/SCADE/lib/C/SmuTypes.c
+	gcc -I"$(SCADE)\libraries\SC65\libmathext" -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" $(C_FLAGS) -DBUILD_DLL -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\C\SmuTypes.c" -o "win64\SmuTypes.o"
+
+win64/SmuLib.o: C:/Program\ Files/ANSYS\ Inc/v251/SCADE/SCADE/lib/C/SmuLib.c
+	gcc -I"$(SCADE)\libraries\SC65\libmathext" -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" $(C_FLAGS) -DBUILD_DLL -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\C\SmuLib.c" -o "win64\SmuLib.o"
+
+win64/SmuVTable.o: C:/Program\ Files/ANSYS\ Inc/v251/SCADE/SCADE/lib/C/SmuVTable.c
+	gcc -I"$(SCADE)\libraries\SC65\libmathext" -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" $(C_FLAGS) -DBUILD_DLL -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "$(SCADE)\lib\C\SmuVTable.c" -o "win64\SmuVTable.o"
+
+win64/Prova_1_interface.o: Prova_1_interface.c
+	gcc -I"$(SCADE)\libraries\SC65\libmathext" -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" $(C_FLAGS) -DBUILD_DLL -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "Prova_1_interface.c" -o "win64\Prova_1_interface.o"
+
+win64/SmuProxy.o: C:/Program\ Files/ANSYS\ Inc/v251/SCADE/SCADE/lib/C/SmuProxy.c
+	gcc -I"$(SCADE)\libraries\SC65\libmathext" -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" $(C_FLAGS) -DBUILD_DLL -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "C:\Program Files\ANSYS Inc\v251\SCADE\SCADE\lib\C\SmuProxy.c" -o "win64\SmuProxy.o"
+
+State_machine_iterator__SM_itera.dll: win64/SM_itera_State_machine_iterator.o win64/kcg_types.o win64/kcg_consts.o win64/Prova_1_mapping.o win64/Prova_1_type.o win64/SmuPredefConv.o win64/SmuConfig.o win64/SmuTypes.o win64/SmuLib.o win64/SmuVTable.o win64/Prova_1_interface.o win64/SmuProxy.o SmuExport.def 
+	gcc -mwindows -mwin32 -shared -static-libgcc  "win64\SM_itera_State_machine_iterator.o" "win64\kcg_types.o" "win64\kcg_consts.o" "win64\Prova_1_mapping.o" "win64\Prova_1_type.o" "win64\SmuPredefConv.o" "win64\SmuConfig.o" "win64\SmuTypes.o" "win64\SmuLib.o" "win64\SmuVTable.o" "win64\Prova_1_interface.o" "win64\SmuProxy.o" -Wl,--output-def,"SmuExport.def" -lm -lwsock32 -m64 -o "State_machine_iterator__SM_itera.dll" 
+
+SmuExport.def: C:/Program\ Files/ANSYS\ Inc/v251/SCADE/SCADE/lib/C/SmuExport.def
+	copy "C:\Program Files\ANSYS Inc\v251\SCADE\SCADE\lib\C\SmuExport.def" "SmuExport.def"
+
+win64/Prova_1_dll.o: Prova_1_dll.c
+	gcc -I"$(SCADE)\libraries\SC65\libmathext" -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" $(C_FLAGS) -DBUILD_DLL -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "Prova_1_dll.c" -o "win64\Prova_1_dll.o"
+
+win64/SmuMainWindows.o: C:/Program\ Files/ANSYS\ Inc/v251/SCADE/SCADE/lib/C/SmuMainWindows.c
+	gcc -I"$(SCADE)\libraries\SC65\libmathext" -I"." -I"$(SCADE)" -I"$(SCADE)\include" -I"$(SCADE)\include\C" -I"$(SCADE)\include\Ada" -I"$(SCADE)\lib\Ada" $(C_FLAGS) -DBUILD_DLL -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c -ansi -std=c99 -m64 "C:\Program Files\ANSYS Inc\v251\SCADE\SCADE\lib\C\SmuMainWindows.c" -o "win64\SmuMainWindows.o"
+
+State_machine_iterator__SM_itera.exe: win64/Prova_1_dll.o win64/SmuMainWindows.o 
+	gcc "win64\Prova_1_dll.o" "win64\SmuMainWindows.o" -lm -lwsock32 -m64 -o "State_machine_iterator__SM_itera.exe" 
+
+#############################################################
+######    End of Makefile
+#############################################################

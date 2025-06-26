@@ -1,0 +1,43 @@
+[scade_version: 2025 R1]
+[scade_project: C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Prova_1.etp]
+[Code Generator]
+8b396d527382c3d3af84181bfe9421ca C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/scade_model_without_unused.scade
+d0a33d5348c80676c537a60b8b31a6b1 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/SM_itera_State_machine_iterator.c
+cf43639c81b0c2c714c6178f75a6077f C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/SM_itera_State_machine_iterator.h
+7d535edbdf83d15184dab0e5b3f45703 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/cmd_cg.log
+173712382f2085fecf6d44c4afc21a6f C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/config.txt
+e85b2e0f65cc41416e4e705c1c3c17f2 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/kcg_consts.c
+3a10cef51b7c0d41bf2a1c521733661a C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/kcg_consts.h
+7c1d58e14c3583c8e3901dab9637dd80 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/kcg_files.txt
+c570e85441febaa6f6d5e23e14e58b55 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/kcg_imported_types.h
+9be63b3e04142e0f4cd8cab311793f49 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/kcg_metrics.txt
+72d610d88464e609d28bcee93d9a5fed C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/kcg_sensors.h
+68f9c7995aae65e1f224b111f895f054 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/kcg_types.c
+946b6849756b59572396fa761f3fdb6d C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/kcg_types.h
+50162fdc4b4571f450fc68b53630557e C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/mapping.xml
+ae3eb7ab76cdc5ab7228e39b505e73d6 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/user_macros.h
+[Mapping Utils]
+50162fdc4b4571f450fc68b53630557e C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/mapping.xml
+0f379c5ba395c92cdffef354dd86bfe5 C:/Program Files/ANSYS Inc/v251/SCADE/SCADE/lib/C/SmuConfig.c
+5b9e0d7ea9b52c17fdae3092ded3ba5e C:/Program Files/ANSYS Inc/v251/SCADE/SCADE/lib/C/SmuLib.c
+ea78c16559afa7b71cd0da3406fd47be C:/Program Files/ANSYS Inc/v251/SCADE/SCADE/lib/C/SmuTypes.c
+f8e54064707a32ec62840ae6f743d17e C:/Program Files/ANSYS Inc/v251/SCADE/SCADE/lib/C/SmuVTable.c
+437de4f14a482a9c5aa23bec1f1d9a09 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Prova_1.etp
+da9885a74188d2db501b22e2d084304e C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/Prova_1_mapping.c
+256ec16be82e392fd668c0b1c69881a3 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/Prova_1_mapping.h
+[Simulator Wrapper]
+50162fdc4b4571f450fc68b53630557e C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/mapping.xml
+437de4f14a482a9c5aa23bec1f1d9a09 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Prova_1.etp
+ec2dc2afd4cfb6728d2f98e8d5792978 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/Prova_1_dll.c
+08989c4e6382b9ce37145b414e34656c C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/Prova_1_interface.c
+3b404f390d788d6bb980c316be5189e7 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/Prova_1_interface.h
+[Type Utils]
+50162fdc4b4571f450fc68b53630557e C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/mapping.xml
+0f379c5ba395c92cdffef354dd86bfe5 C:/Program Files/ANSYS Inc/v251/SCADE/SCADE/lib/C/SmuConfig.c
+5b9e0d7ea9b52c17fdae3092ded3ba5e C:/Program Files/ANSYS Inc/v251/SCADE/SCADE/lib/C/SmuLib.c
+e63dd4db596b0c8780bfb3394e53cfd7 C:/Program Files/ANSYS Inc/v251/SCADE/SCADE/lib/C/SmuPredefConv.c
+ea78c16559afa7b71cd0da3406fd47be C:/Program Files/ANSYS Inc/v251/SCADE/SCADE/lib/C/SmuTypes.c
+f8e54064707a32ec62840ae6f743d17e C:/Program Files/ANSYS Inc/v251/SCADE/SCADE/lib/C/SmuVTable.c
+437de4f14a482a9c5aa23bec1f1d9a09 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Prova_1.etp
+2fe795a67d4fbd9c3ea346af1629e76a C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/Prova_1_type.c
+be4cd539451634a4524bc812b29179f7 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/Prova_1_type.h

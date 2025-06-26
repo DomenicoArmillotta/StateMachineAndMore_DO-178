@@ -1,0 +1,9 @@
+Prove : 
+- quindi SM con variabile locale , posso solo accedere alla variabile nello stesso stato
+- se voglio accedere in un altro stato la devo fare come OUTPUT --> IN TEXTUAL EXPRESSION
+- i signal devono essere BOOLEANI , e devo usare lo stesso , uno in emit e laltro in Receive
+
+
+Aggiungere una libreria : 
+---  Insert --> project in a workspaces-->
+- path = C:\Program Files\ANSYS Inc\v251\SCADE\SCADE\libraries\SC65\...

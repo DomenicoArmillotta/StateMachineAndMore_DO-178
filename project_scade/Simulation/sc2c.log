@@ -1,0 +1,62 @@
+$************** ANSYS(R) SCADE Suite(R) - SCADETOC - Version 2025 R1 (build 20241115T091541) **************
+** Generation date: 2025-06-24T15:56:02
+** Command: scade -code "C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Prova_1.etp" -root State_machine_iterator::SM_itera -conf Simulation -sim -all
+*************************************************************$
+*** Generated Files Information (GENFIL): KCG- Generated files
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\mapping.xml, line 0, character 0
+ ~mapping.xml
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\kcg_metrics.txt, line 0, character 0
+ ~kcg_metrics.txt
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\SM_itera_State_machine_iterator.c, line 0, character 0
+ ~SM_itera_State_machine_iterator.c
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\SM_itera_State_machine_iterator.h, line 0, character 0
+ ~SM_itera_State_machine_iterator.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\kcg_types.h, line 0, character 0
+ ~kcg_types.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\kcg_consts.h, line 0, character 0
+ ~kcg_consts.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\kcg_sensors.h, line 0, character 0
+ ~kcg_sensors.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\kcg_types.c, line 0, character 0
+ ~kcg_types.c
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\kcg_consts.c, line 0, character 0
+ ~kcg_consts.c
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\config.txt, line 0, character 0
+ ~config.txt
+*** Generated Files Information (GENFIL): Code Generator Generated files
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\user_macros.h, line 0, character 0
+ ~user_macros.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\kcg_imported_types.h, line 0, character 0
+ ~kcg_imported_types.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\sc2c.log, line 0, character 0
+ ~sc2c.log
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\sc2c_integration_files.txt, line 0, character 0
+ ~sc2c_integration_files.txt
+*** Generated Files Information (GENFIL): Type Utils Generated files
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\Prova_1_type.h, line 0, character 0
+ ~Prova_1_type.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\Prova_1_type.c, line 0, character 0
+ ~Prova_1_type.c
+*** Generated Files Information (GENFIL): Mapping Utils Generated files
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\Prova_1_mapping.h, line 0, character 0
+ ~Prova_1_mapping.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\Prova_1_mapping.c, line 0, character 0
+ ~Prova_1_mapping.c
+*** Generated Files Information (GENFIL): Simulator Generated files
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\Prova_1_interface.h, line 0, character 0
+ ~Prova_1_interface.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\Prova_1_interface.c, line 0, character 0
+ ~Prova_1_interface.c
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\Prova_1_dll.c, line 0, character 0
+ ~Prova_1_dll.c
+*** Generated Files Information (GENFIL): Build Generated files
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\Makefile_win64, line 0, character 0
+ ~Makefile_win64
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\State_machine_iterator__SM_itera.dll, line 0, character 0
+ ~State_machine_iterator__SM_itera.dll
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\Simulation\State_machine_iterator__SM_itera.exe, line 0, character 0
+ ~State_machine_iterator__SM_itera.exe
+$************** ANSYS(R) SCADE Suite(R) - SCADETOC - Version 2025 R1 (build 20241115T091541) **************
+** Generation date: 2025-06-24T15:56:07
+** sc2c.log
+*************************************************************$

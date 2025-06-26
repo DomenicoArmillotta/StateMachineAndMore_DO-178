@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <Model date="" commandLine="">
+    <Option name="use_types" value="#off#"/>
+    <Option name="imported_root_package" value="#off#"/>
+    <Option name="root_package" value="#off#"/>
+    <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <Option name="state_vector" value="#off#"/>
+    <Option name="static" value="#off#"/>
+    <Option name="separate_io_all" value="#off#"/>
+    <Option name="no_separate_io" value="#off#"/>
+    <Option name="separate_io" value="#off#"/>
+    <Option name="warn_error" value="#off#"/>
+    <Option name="short_circuit" value="#off#"/>
+    <Option name="wrap_c_ops" value="#off#"/>
+    <Option name="input_file" value="C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation/scade_model_without_unused.scade"/>
+    <Option name="probes" value="#on#"/>
+    <Option name="no_observe" value="#off#"/>
+    <Option name="observe" value="#off#"/>
+    <Option name="debug" value="#on#"/>
+    <Option name="user_config" value="./user_macros.h"/>
+    <Option name="input_threshold" value="#off#"/>
+    <Option name="header" value="#off#"/>
+    <Option name="significance_length" value="31"/>
+    <Option name="name_length" value="200"/>
+    <Option name="globals_prefix" value="#off#"/>
+    <Option name="keep_asserts" value="#off#"/>
+    <Option name="global_root_context" value="#off#"/>
+    <Option name="expall" value="#off#"/>
+    <Option name="noexp" value="#off#"/>
+    <Option name="exp" value="#off#"/>
+    <Option name="target_dir" value="C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Simulation"/>
+    <Option name="target" value="C"/>
+    <Option name="root" value="State_machine_iterator::SM_itera"/>
+    <Option name="auth" value="#off#"/>
+    <Package scadeName="State_machine_iterator">
+      <RootNode scadeName="SM_itera" headerFile="SM_itera_State_machine_iterator.h" targetCycleFct="SM_itera_State_machine_iterator" targetInitFct="SM_itera_reset_State_machine_iterator" targetInitializationFct="SM_itera_init_State_machine_iterator">
+        <Input scadeName="isOn" scadeType="bool" targetName="isOn" targetType="kcg_bool" inCtx="true"/>
+        <Input scadeName="in" scadeType="int8" targetName="in" targetType="kcg_int8" inCtx="true"/>
+        <Output scadeName="out" scadeType="int8" targetName="out" targetType="kcg_int8" inCtx="true"/>
+        <Output scadeName="Output2" scadeType="bool" targetName="Output2" targetType="kcg_bool" inCtx="true"/>
+        <Automaton scadeName="SM1" targetStatesType="SSM_ST_SM1" targetTransitionsType="SSM_TR_SM1">
+          <State scadeName="init" targetName="SSM_st_init_SM1">
+            <Fork priority="1">
+              <Condition/>
+              <Transition targetName="SSM_TR_init_State2_1_init_SM1" scadeDest="State2" kind="weak"/>
+            </Fork>
+          </State>
+          <State scadeName="State2" targetName="SSM_st_State2_SM1">
+            <Automaton scadeName="SM2" targetStatesType="SSM_ST_SM2_State2_SM1" targetTransitionsType="SSM_TR_SM2_State2_SM1">
+              <State scadeName="StateContninuous" targetName="SSM_st_StateContninuous_SM2_State2_SM1">
+                <Local scadeName="FAS" scadeType="bool" targetName="FAS_StateContninuous_SM2_State2_SM1" targetType="kcg_bool" inCtx="true" clockVar="SM1_state_act" clockVal="SSM_st_State2_SM1"/>
+                <Local scadeName="_L2" scadeType="int8" targetName="L2_StateContninuous_SM2_State2_SM1" targetType="kcg_int8" inCtx="true" clockVar="SM1_state_act" clockVal="SSM_st_State2_SM1"/>
+                <Local scadeName="_L4" scadeType="bool" targetName="L4_StateContninuous_SM2_State2_SM1" targetType="kcg_bool" inCtx="true" clockVar="SM1_state_act" clockVal="SSM_st_State2_SM1"/>
+                <Local scadeName="_L5" scadeType="bool" targetName="L5_StateContninuous_SM2_State2_SM1" targetType="kcg_bool" inCtx="true" clockVar="SM1_state_act" clockVal="SSM_st_State2_SM1"/>
+                <Local scadeName="_L6" scadeType="bool" targetName="L6_StateContninuous_SM2_State2_SM1" targetType="kcg_bool" inCtx="true" clockVar="SM1_state_act" clockVal="SSM_st_State2_SM1"/>
+                <Local scadeName="_L3" scadeType="bool" targetName="L3_StateContninuous_SM2_State2_SM1" targetType="kcg_bool" inCtx="true" clockVar="SM1_state_act" clockVal="SSM_st_State2_SM1"/>
+                <Fork priority="1">
+                  <Condition/>
+                  <Transition targetName="SSM_TR_StateContninuous_StateContninuous_1_StateContninuous_SM2_State2_SM1" scadeDest="StateContninuous" kind="weak"/>
+                </Fork>
+              </State>
+              <ActiveState targetName="SM2_state_act_State2_SM1" inCtx="true"/>
+              <SelectedState targetName="SM2_state_sel_State2_SM1" inCtx="true"/>
+              <NextState targetName="SM2_state_nxt_State2_SM1" inCtx="true" mem="true"/>
+              <ResetActiveState targetName="SM2_reset_act_State2_SM1" inCtx="true" mem="true"/>
+              <ResetNextState targetName="SM2_reset_nxt_State2_SM1" inCtx="true" mem="true"/>
+              <StrongTransition targetName="SM2_fired_strong_State2_SM1" inCtx="true"/>
+              <WeakTransition targetName="SM2_fired_State2_SM1" inCtx="true"/>
+            </Automaton>
+            <Automaton scadeName="SM3" targetStatesType="SSM_ST_SM3_State2_SM1" targetTransitionsType="SSM_TR_SM3_State2_SM1">
+              <State scadeName="State4" targetName="SSM_st_State4_SM3_State2_SM1">
+                <Local scadeName="_L1" scadeType="bool" targetName="L1_State4_SM3_State2_SM1" targetType="kcg_bool" inCtx="true" clockVar="SM3_clock_State2_SM1" clockVal="SSM_st_State4_SM3_State2_SM1"/>
+                <Fork priority="1">
+                  <Condition/>
+                  <Transition targetName="SSM_TR_State4_State5_1_State4_SM3_State2_SM1" scadeDest="State5" kind="weak"/>
+                </Fork>
+              </State>
+              <State scadeName="State5" targetName="SSM_st_State5_SM3_State2_SM1"/>
+              <ActiveState targetName="SM3_state_act_State2_SM1" inCtx="true"/>
+              <SelectedState targetName="SM3_state_sel_State2_SM1" inCtx="true"/>
+              <NextState targetName="SM3_state_nxt_State2_SM1" inCtx="true" mem="true"/>
+              <ResetActiveState targetName="SM3_reset_act_State2_SM1" inCtx="true" mem="true"/>
+              <ResetNextState targetName="SM3_reset_nxt_State2_SM1" inCtx="true" mem="true"/>
+              <StrongTransition targetName="SM3_fired_strong_State2_SM1" inCtx="true"/>
+              <WeakTransition targetName="SM3_fired_State2_SM1" inCtx="true"/>
+            </Automaton>
+            <Fork priority="1">
+              <Condition/>
+              <Transition targetName="SSM_TR_State2_Error_1_State2_SM1" scadeDest="Error" kind="weak"/>
+            </Fork>
+          </State>
+          <State scadeName="Error" targetName="SSM_st_Error_SM1"/>
+          <ActiveState targetName="SM1_state_act" inCtx="true"/>
+          <SelectedState targetName="SM1_state_sel" inCtx="true"/>
+          <NextState targetName="SM1_state_nxt" inCtx="true" mem="true"/>
+          <ResetActiveState targetName="SM1_reset_act" inCtx="true" mem="true"/>
+          <ResetNextState targetName="SM1_reset_nxt" inCtx="true" mem="true"/>
+          <StrongTransition targetName="SM1_fired_strong" inCtx="true"/>
+          <WeakTransition targetName="SM1_fired" inCtx="true"/>
+        </Automaton>
+        <Init targetName="init" targetType="kcg_bool" inCtx="true"/>
+        <Memory targetName="SM3_reset_nxt_State2_SM1" targetType="kcg_bool" inCtx="true"/>
+        <Memory targetName="SM3_state_nxt_State2_SM1" targetType="SSM_ST_SM3_State2_SM1" inCtx="true"/>
+        <Memory targetName="SM2_reset_nxt_State2_SM1" targetType="kcg_bool" inCtx="true"/>
+        <Memory targetName="SM2_state_nxt_State2_SM1" targetType="SSM_ST_SM2_State2_SM1" inCtx="true"/>
+        <Memory targetName="SM1_state_nxt" targetType="SSM_ST_SM1" inCtx="true"/>
+        <Memory targetName="SM1_reset_nxt" targetType="kcg_bool" inCtx="true"/>
+        <Clock targetName="SM3_clock_State2_SM1" targetType="SSM_ST_SM3_State2_SM1" inCtx="true" clockVar="SM1_state_act" clockVal="SSM_st_State2_SM1"/>
+        <Clock targetName="SM1_state_act" targetType="SSM_ST_SM1" inCtx="true"/>
+        <OutCtxType targetName="outC_SM_itera_State_machine_iterator"/>
+        <InCtxType targetName="inC_SM_itera_State_machine_iterator"/>
+      </RootNode>
+    </Package>
+    <PredefType scadeName="int8" targetName="kcg_int8"/>
+    <PredefType scadeName="int16" targetName="kcg_int16"/>
+    <PredefType scadeName="int32" targetName="kcg_int32"/>
+    <PredefType scadeName="int64" targetName="kcg_int64"/>
+    <PredefType scadeName="uint8" targetName="kcg_uint8"/>
+    <PredefType scadeName="uint16" targetName="kcg_uint16"/>
+    <PredefType scadeName="uint32" targetName="kcg_uint32"/>
+    <PredefType scadeName="uint64" targetName="kcg_uint64"/>
+    <PredefType scadeName="size" targetName="kcg_size"/>
+    <PredefType scadeName="float32" targetName="kcg_float32"/>
+    <PredefType scadeName="float64" targetName="kcg_float64"/>
+    <PredefType scadeName="bool" targetName="kcg_bool"/>
+    <PredefType scadeName="char" targetName="kcg_char"/>
+  </Model>

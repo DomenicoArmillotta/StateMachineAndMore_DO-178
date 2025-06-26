@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" name="Random">
+	<inputs>
+		<Variable name="min">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4add/77E0/23E8/685511a02cee"/>
+			</pragmas>
+		</Variable>
+		<Variable name="max">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4ade/77E0/23E8/685511ab4277"/>
+			</pragmas>
+		</Variable>
+		<Variable name="trigger">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4adf/77E0/23E8/685511be108d"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="RandInt">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4b7f/77E0/23E8/685513a36e97"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<locals>
+		<Variable name="Range">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4b71/77E0/23E8/68551364765c"/>
+			</pragmas>
+		</Variable>
+		<Variable name="Seed">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<default>
+				<ConstValue value="1"/>
+			</default>
+			<pragmas>
+				<ed:Variable oid="!ed/4b7c/77E0/23E8/685513827a42"/>
+			</pragmas>
+		</Variable>
+		<Variable name="Next">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4b7d/77E0/23E8/6855138d276d"/>
+			</pragmas>
+		</Variable>
+		<Variable name="Value">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4b7e/77E0/23E8/685513953d94"/>
+			</pragmas>
+		</Variable>
+		<Variable name="Seed_mem">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4c8c/77E0/23E8/685515741dc4"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<TextData text="Seed_mem = Seed&#xA;
+Range = max - min + 1;&#xA;
+Next = (11 * Seed + 12) mod 21;&#xA;
+Seed_mem = if trigger then Next else Seed_mem;&#xA;
+Value = Next mod Range;&#xA;
+RandInt = min + Value;">
+			<pragmas>
+				<ed:TextData oid="!ed/4c98/77E0/23E8/6855158d5122"/>
+			</pragmas>
+		</TextData>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/4ace/77E0/23E8/685511692e77" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<TextDiagram name="Random_1" landscape="false" format="A4 (210 297)" oid="!ed/4ad0/77E0/23E8/68551176140f">
+					<presentationElements>
+						<FlowTE presentable="!ed/4c98/77E0/23E8/6855158d5122"/>
+					</presentationElements>
+				</TextDiagram>
+			</diagrams>
+		</ed:Operator>
+	</pragmas>
+</Operator>

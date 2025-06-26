@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" name="Somma">
+	<inputs>
+		<Variable name="Input1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4d51/77E0/23E8/6855176f142b"/>
+			</pragmas>
+		</Variable>
+		<Variable name="Input2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4d5b/77E0/23E8/685517722ec0"/>
+			</pragmas>
+		</Variable>
+		<Variable name="Input3">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4d7d/77E0/23E8/685517885bb8"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="Output1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4d64/77E0/23E8/68551774653f"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<locals>
+		<Variable name="L1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4d53/77E0/23E8/6855176f41bd"/>
+			</pragmas>
+		</Variable>
+		<Variable name="L2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4d5d/77E0/23E8/685517727142"/>
+			</pragmas>
+		</Variable>
+		<Variable name="L3">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4d6d/77E0/23E8/6855177847a2"/>
+			</pragmas>
+		</Variable>
+		<Variable name="L4">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4d75/77E0/23E8/685517822575"/>
+			</pragmas>
+		</Variable>
+		<Variable name="L5">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4d7f/77E0/23E8/6855178848a6"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<!-- L1 = Input1; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="L1"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="Input1"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4d52/77E0/23E8/6855176f35ce"/>
+			</pragmas>
+		</Equation>
+		<!-- L2 = Input2; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="L2"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="Input2"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4d5c/77E0/23E8/685517727949"/>
+			</pragmas>
+		</Equation>
+		<!-- Output1 = L4; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="Output1"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="L4"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4d65/77E0/23E8/68551774b92"/>
+			</pragmas>
+		</Equation>
+		<!-- L3 = L1 + L2; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="L3"/>
+			</lefts>
+			<right>
+				<!-- L1 + L2 -->
+				<NAryOp name="1" operator="+">
+					<operands>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="L1"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="L2"/>
+							</path>
+						</IdExpression>
+					</operands>
+				</NAryOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4d6c/77E0/23E8/6855177835ae"/>
+			</pragmas>
+		</Equation>
+		<!-- L4 = L3 mod L5; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="L4"/>
+			</lefts>
+			<right>
+				<!-- L3 mod L5 -->
+				<BinaryOp name="1" operator="mod">
+					<operands>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="L3"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="L5"/>
+							</path>
+						</IdExpression>
+					</operands>
+				</BinaryOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4d74/77E0/23E8/6855178217f7"/>
+			</pragmas>
+		</Equation>
+		<!-- L5 = Input3; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="L5"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="Input3"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4d7e/77E0/23E8/685517883089"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/4d4c/77E0/23E8/685517662ce6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<TextDiagram name="Somma_1" landscape="false" format="A4 (210 297)" oid="!ed/4d84/77E0/23E8/685517bc662d">
+					<presentationElements>
+						<FlowTE presentable="!ed/4d52/77E0/23E8/6855176f35ce"/>
+						<FlowTE presentable="!ed/4d5c/77E0/23E8/685517727949"/>
+						<FlowTE presentable="!ed/4d65/77E0/23E8/68551774b92"/>
+						<FlowTE presentable="!ed/4d6c/77E0/23E8/6855177835ae"/>
+						<FlowTE presentable="!ed/4d74/77E0/23E8/6855178217f7"/>
+						<FlowTE presentable="!ed/4d7e/77E0/23E8/685517883089"/>
+					</presentationElements>
+				</TextDiagram>
+			</diagrams>
+		</ed:Operator>
+	</pragmas>
+</Operator>
