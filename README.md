@@ -6,6 +6,6 @@ In this example exercise we went to create an operator whose goal is to correct 
 The generated code is DO-178C certified , has not been covered by testing , but only with simulations and debugging , and is written in C.
 The modules of the little project are as follows :
 1. **Random Operator** = operator which is used to distort the signal randomly , being deterministic code at the same input will result in the same distortion , by nature of the code itself. The random function implemented is the Linear Congruential Generator
- ![Random Operator](img/random.png)
+ ![Random Operator](img/random.PNG)
 2. **Correcting Operator** =
 3. **Iterative Operator** =
