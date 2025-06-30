@@ -17,4 +17,4 @@ In this state machine , you have 3 states connected by a weak connection , and i
 The first one on the left is called by itself , so that it performs continuous checks on the variables.
 The second on the right , proceeds in the flow and terminates in the final state.
 The hierarchically higher state machine , will go from state 2 to state 3 , only if one of the checks fails in the iterative SM.
-![Prallel State Machine](img/State_machine.PNG)
+![Prallel State Machine](img/State_machine1.PNG)
