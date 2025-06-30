@@ -7,5 +7,7 @@ The generated code is DO-178C certified , has not been covered by testing , but 
 The modules of the little project are as follows :
 1. **Random Operator** = operator which is used to distort the signal randomly , being deterministic code at the same input will result in the same distortion , by nature of the code itself. The random function implemented is the Linear Congruential Generator
  ![Random Operator](img/random.PNG)
-2. **Correcting Operator** =
-3. **Iterative Operator** =
+2. **Correcting Operator** = Operator that corrects the distorted signal by making it correct using the progressive window average consisting of 10 elements. The signal is corrected using the ideal signal and the distorted signal , one should not use the ideal signal but an estimated error , but this complication was not introduced being a basic example to test the tool
+![Random Operator](img/correcting_logic.PNG)
+3. **Pipeline Operator** = Pipeline that brings together all the stages , then. Ideal Signal --> Biased signal (Random Operator)--> correction (Correction Operator) --> Total Abs Error with threshold
+![Random Operator](img/pipeline.PNG)
