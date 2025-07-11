@@ -1,7 +1,8 @@
 # StateMachineAndMore_DO-178
 Developed and validated code and algorithms for the DO-178C avionics standard. These are just some of the huge amount of trials and projects developed
+# 1. State Machine integrated in Texas Istrument board + udp protocol
 
-# Bias-correcting operator of a signal
+# 2. Bias-correcting operator of a signal
 In this example exercise we went to create an operator whose goal is to correct bias using a cumulative average of the various elements of the value window. Then the average difference of the corrected and original value without bias is calculated, and if it exceeds a threshold the system will warn of the warning.
 The generated code is DO-178C certified , has not been covered by testing , but only with simulations and debugging , and is written in C.
 The modules of the little project are as follows :
@@ -12,7 +13,7 @@ The modules of the little project are as follows :
 3. **Pipeline Operator** = Pipeline that brings together all the stages , then. Ideal Signal --> Biased signal (Random Operator)--> correction (Correction Operator) --> Total Abs Error with threshold
 ![Pipeline Operator](img/pipeline.PNG)
 
-# Prallel State Machine 
+# 3. Prallel State Machine 
 In this state machine , you have 3 states connected by a weak connection , and inside the second state are two state machines running in parallel.
 The first one on the left is called by itself , so that it performs continuous checks on the variables.
 The second on the right , proceeds in the flow and terminates in the final state.
