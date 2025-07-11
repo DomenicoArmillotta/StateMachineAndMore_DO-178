@@ -11,14 +11,15 @@ Embedded system that:
 
 ```plaintext
 +-------------------+           UDP           +----------------------+
-|   🖥️ Python Sender   | ---------------------> |   🧠 Embedded Board      |
-| (WCU_Trigger_Event) |                      |     (wcu_fas_loop)       |
-+-------------------+                      |  - Receive input        |
-                                           |  - Execute FSM (SCADE)  |
-+-------------------+     UDP se output    |  - Send output          |
-| 🖥️ Python Receiver  | <--------------------- |  via UdpSend()          |
-| (WCU_Mission_Status)|                     +----------------------+
+|   🖥️ Python Sender   | ---------------- -> |   🧠 Embedded Board    |
+| (WCU_Trigger_Event) |                      |     (wcu_fas_loop)      |
++-------------------+                        |  - Receive input        |
+                                             |  - Execute FSM (SCADE)  |
++-------------------+     UDP se output      |  - Send output          |
+| 🖥️ Python Receiver  | <------------------ |  via UdpSend()           |
+| (WCU_Mission_Status)|                       +----------------------+
 +-------------------+
+```
 
 
 Sent/received data are structures with different msg_id and composed as follows :
