@@ -1,0 +1,4 @@
+-target_dir "C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG" -target C -name_length 200 -significance_length 31 -user_config "./user_macros.h" 
+-root State_Machine_TI::StateMachine
+"C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/WCU.xscade"
+"C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Package5.xscade"

@@ -1,0 +1,72 @@
+/* $********** SCADE Suite KCG 32-bit 6.6.4 (build i3) **********
+** Command: kcg664.exe -config C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG/config.txt
+** Generation date: 2025-07-10T17:27:29
+*************************************************************$ */
+
+/* xscade source: C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/WCU.xscade */
+
+
+/* xscade source: C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Package5.xscade */
+package State_Machine_TI
+  type Type1 = { struct_bool : bool, struct_int : int8 };
+
+  node StateMachine(Input1 : int8; Input2 : int8; Input3 : Type1)
+    returns (Output1 : int8 default = 0; Output2 : Type1 default = Input3)
+  let
+
+    automaton SM1
+      initial state State1
+        var
+          _L1 : int8;
+          _L2 : int8;
+          _L3 : int8;
+        let
+          _L1= Input1;
+          _L2= Input2;
+          _L3= _L1 #1 + _L2;
+          Output1= _L3;
+        tel
+        until
+          if Output1 #1 = 5 restart State2;
+
+      state State2
+        var
+          _L4 : bool;
+          _L5 : Type1;
+          _L7 : bool;
+          _L6 : int8;
+          _L8 : bool;
+          _L9 : bool;
+          _L10 : int8;
+          _L11 : bool;
+          _L12 : Type1;
+          _L13 : int8;
+        let
+          _L4= true;
+          _L5= Input3;
+          _L7, _L6= (#2 flatten Type1)(_L5);
+          _L8= _L4 #2 = _L7;
+          _L9= _L6 #3 = _L10;
+          _L10= 1;
+          _L11= _L8 #1 and _L9;
+          Output2= _L12;
+          _L12= (#1 make Type1)(_L11, _L13);
+          _L13= 5;
+        tel
+        until
+          if Output2#1.struct_int #4 = 5 restart State3;
+
+      state State3
+        let
+        tel
+        until
+          if true restart State1;
+    returns ..;
+  tel
+
+end;
+
+/* $********** SCADE Suite KCG 32-bit 6.6.4 (build i3) **********
+** -
+** Generation date: 2025-07-10T17:27:29
+*************************************************************$ */

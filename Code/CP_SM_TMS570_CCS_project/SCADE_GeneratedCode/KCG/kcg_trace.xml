@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <Model date="" commandLine="">
+    <Option name="use_types" value="#off#"/>
+    <Option name="imported_root_package" value="#off#"/>
+    <Option name="root_package" value="#off#"/>
+    <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <Option name="state_vector" value="#off#"/>
+    <Option name="static" value="#off#"/>
+    <Option name="separate_io_all" value="#off#"/>
+    <Option name="no_separate_io" value="#off#"/>
+    <Option name="separate_io" value="#off#"/>
+    <Option name="warn_error" value="#off#"/>
+    <Option name="short_circuit" value="#off#"/>
+    <Option name="wrap_c_ops" value="#off#"/>
+    <Option name="input_file" value="C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Package5.xscade"/>
+    <Option name="input_file" value="C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/WCU.xscade"/>
+    <Option name="probes" value="#off#"/>
+    <Option name="debug" value="#off#"/>
+    <Option name="no_observe" value="#off#"/>
+    <Option name="observe" value="#off#"/>
+    <Option name="user_config" value="./user_macros.h"/>
+    <Option name="input_threshold" value="#off#"/>
+    <Option name="header" value="#off#"/>
+    <Option name="significance_length" value="31"/>
+    <Option name="name_length" value="200"/>
+    <Option name="globals_prefix" value="#off#"/>
+    <Option name="keep_asserts" value="#off#"/>
+    <Option name="global_root_context" value="#off#"/>
+    <Option name="expall" value="#off#"/>
+    <Option name="noexp" value="#off#"/>
+    <Option name="exp" value="#off#"/>
+    <Option name="target_dir" value="C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG"/>
+    <Option name="target" value="C"/>
+    <Option name="root" value="State_Machine_TI::StateMachine"/>
+    <Option name="auth" value="#off#"/>
+    <Package scadeName="State_Machine_TI">
+      <NamedType scadeName="Type1" targetName="Type1_State_Machine_TI" refType="Type1_State_Machine_TI"/>
+      <RootNode scadeName="StateMachine" headerFile="StateMachine_State_Machine_TI.h" targetCycleFct="StateMachine_State_Machine_TI" targetInitFct="StateMachine_reset_State_Machine_TI" targetInitializationFct="StateMachine_init_State_Machine_TI">
+        <Input scadeName="Input1" scadeType="int8" targetName="Input1" targetType="kcg_int8" inCtx="true"/>
+        <Input scadeName="Input2" scadeType="int8" targetName="Input2" targetType="kcg_int8" inCtx="true"/>
+        <Input scadeName="Input3" scadeType="State_Machine_TI::Type1" targetName="Input3" targetType="Type1_State_Machine_TI" inCtx="true"/>
+        <Output scadeName="Output1" scadeType="int8" targetName="Output1" targetType="kcg_int8" inCtx="true"/>
+        <Output scadeName="Output2" scadeType="State_Machine_TI::Type1" targetName="Output2" targetType="Type1_State_Machine_TI" inCtx="true"/>
+        <Automaton scadeName="SM1" targetStatesType="SSM_ST_SM1" targetTransitionsType="SSM_TR_SM1">
+          <State scadeName="State1" targetName="SSM_st_State1_SM1">
+            <Fork priority="1">
+              <Condition/>
+              <Transition targetName="SSM_TR_State1_State2_1_State1_SM1" scadeDest="State2" kind="weak"/>
+            </Fork>
+          </State>
+          <State scadeName="State2" targetName="SSM_st_State2_SM1">
+            <Fork priority="1">
+              <Condition/>
+              <Transition targetName="SSM_TR_State2_State3_1_State2_SM1" scadeDest="State3" kind="weak"/>
+            </Fork>
+          </State>
+          <State scadeName="State3" targetName="SSM_st_State3_SM1">
+            <Fork priority="1">
+              <Condition/>
+              <Transition targetName="SSM_TR_State3_State1_1_State3_SM1" scadeDest="State1" kind="weak"/>
+            </Fork>
+          </State>
+          <NextState targetName="SM1_state_nxt" inCtx="true" mem="true"/>
+        </Automaton>
+        <Memory targetName="SM1_state_nxt" targetType="SSM_ST_SM1" inCtx="true"/>
+        <OutCtxType targetName="outC_StateMachine_State_Machine_TI"/>
+        <InCtxType targetName="inC_StateMachine_State_Machine_TI"/>
+      </RootNode>
+    </Package>
+    <StructType targetName="Type1_State_Machine_TI" targetCopyFct="kcg_copy_Type1_State_Machine_TI" targetCompFct="kcg_comp_Type1_State_Machine_TI">
+      <Field scadeName="struct_bool" scadeType="kcg_bool" targetName="struct_bool" targetType="kcg_bool"/>
+      <Field scadeName="struct_int" scadeType="kcg_int8" targetName="struct_int" targetType="kcg_int8"/>
+    </StructType>
+    <PredefType scadeName="int8" targetName="kcg_int8"/>
+    <PredefType scadeName="int16" targetName="kcg_int16"/>
+    <PredefType scadeName="int32" targetName="kcg_int32"/>
+    <PredefType scadeName="int64" targetName="kcg_int64"/>
+    <PredefType scadeName="uint8" targetName="kcg_uint8"/>
+    <PredefType scadeName="uint16" targetName="kcg_uint16"/>
+    <PredefType scadeName="uint32" targetName="kcg_uint32"/>
+    <PredefType scadeName="uint64" targetName="kcg_uint64"/>
+    <PredefType scadeName="size" targetName="kcg_size"/>
+    <PredefType scadeName="float32" targetName="kcg_float32"/>
+    <PredefType scadeName="float64" targetName="kcg_float64"/>
+    <PredefType scadeName="bool" targetName="kcg_bool"/>
+    <PredefType scadeName="char" targetName="kcg_char"/>
+  </Model>

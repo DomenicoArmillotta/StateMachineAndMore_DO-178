@@ -1,0 +1,23 @@
+[scade_version: 2025 R1]
+[scade_project: C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/State_machine_DO178.etp]
+[Code Generator]
+6a134574654130395ef45212394c2315 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Operator14.xscade
+81ea4c2871bdf4a305a66694cb00df62 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Package5.xscade
+395a6ba4e10768b351b454e851c6b6d1 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Update_STATUS.xscade
+395a6ba4e10768b351b454e851c6b6d1 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/WCU.xscade
+395a6ba4e10768b351b454e851c6b6d1 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/WCU_StateMachine.xscade
+aa1d6621f684eada211cab04bbb6b79c C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG/StateMachine_State_Machine_TI.c
+7a739019dff9cc89777cd58eb0e94bd0 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG/StateMachine_State_Machine_TI.h
+f0cd4bae796803d3079991534d6074da C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG/cmd_cg.log
+0cd9e0b85fa4f097f4ca3e2bb5ea318a C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG/config.txt
+4f7180315a89b20cc759e2f5bcf2c656 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG/kcg_consts.c
+84b92b7c7b5175d6bfd95763d1cd6587 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG/kcg_consts.h
+92ebd71b0426aab9c83265331dde06fa C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG/kcg_files.txt
+c570e85441febaa6f6d5e23e14e58b55 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG/kcg_imported_types.h
+55ad976bf30428d06550b9f1c0f587de C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG/kcg_metrics.txt
+17a7d0ff3a4d65523ca7d3d7ec2643f4 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG/kcg_sensors.h
+e5a90e536f9ab1049ee56d591e459dac C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG/kcg_types.c
+9a90af7917a5df16abb5887d8d6fe0f7 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG/kcg_types.h
+0a2e878e18b851377c581538061ee92f C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG/kcg_xml_filter_out.scade
+029227526b7dce9f71352b1a87f3dca2 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG/mapping.xml
+e23907115fc212ba1319b5fd9b23f340 C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG/user_macros.h
