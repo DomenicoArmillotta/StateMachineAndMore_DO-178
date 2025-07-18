@@ -1,0 +1,60 @@
+$************** ANSYS(R) SCADE Suite(R) - SCADETOC - Version 2025 R1 (build 20241115T091541) **************
+** Generation date: 2025-07-18T14:22:12
+** Command: scade -code "C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\State_machine_DO178.etp" -root Package_convolution::edgeDetector -conf KCG
+*************************************************************$
+*** Generated Files Information (GENFIL): KCG- Generated files
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\mapping.xml, line 0, character 0
+ ~mapping.xml
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\kcg_metrics.txt, line 0, character 0
+ ~kcg_metrics.txt
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\edgeDetector_Package_convolution.c, line 0, character 0
+ ~edgeDetector_Package_convolution.c
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\MatAdd_vect_int8_30_30.c, line 0, character 0
+ ~MatAdd_vect_int8_30_30.c
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\VectAdd_vect_int8_30.c, line 0, character 0
+ ~VectAdd_vect_int8_30.c
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\matrixAbs_Package_convolution_30.c, line 0, character 0
+ ~matrixAbs_Package_convolution_30.c
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\VectorAbs_Package_convolution_30.c, line 0, character 0
+ ~VectorAbs_Package_convolution_30.c
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\conv32_32_Package_convolution.c, line 0, character 0
+ ~conv32_32_Package_convolution.c
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\edgeDetector_Package_convolution.h, line 0, character 0
+ ~edgeDetector_Package_convolution.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\MatAdd_vect_int8_30_30.h, line 0, character 0
+ ~MatAdd_vect_int8_30_30.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\VectAdd_vect_int8_30.h, line 0, character 0
+ ~VectAdd_vect_int8_30.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\matrixAbs_Package_convolution_30.h, line 0, character 0
+ ~matrixAbs_Package_convolution_30.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\VectorAbs_Package_convolution_30.h, line 0, character 0
+ ~VectorAbs_Package_convolution_30.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\conv32_32_Package_convolution.h, line 0, character 0
+ ~conv32_32_Package_convolution.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\kcg_types.h, line 0, character 0
+ ~kcg_types.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\kcg_consts.h, line 0, character 0
+ ~kcg_consts.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\kcg_sensors.h, line 0, character 0
+ ~kcg_sensors.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\kcg_types.c, line 0, character 0
+ ~kcg_types.c
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\kcg_consts.c, line 0, character 0
+ ~kcg_consts.c
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\kcg_xml_filter_out.scade, line 0, character 0
+ ~kcg_xml_filter_out.scade
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\config.txt, line 0, character 0
+ ~config.txt
+*** Generated Files Information (GENFIL): Code Generator Generated files
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\user_macros.h, line 0, character 0
+ ~user_macros.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\kcg_imported_types.h, line 0, character 0
+ ~kcg_imported_types.h
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\sc2c.log, line 0, character 0
+ ~sc2c.log
+  at file C:\Users\mbda\Documents\GitHub\SCADE_project\prova_1\Prova_1\KCG\sc2c_integration_files.txt, line 0, character 0
+ ~sc2c_integration_files.txt
+$************** ANSYS(R) SCADE Suite(R) - SCADETOC - Version 2025 R1 (build 20241115T091541) **************
+** Generation date: 2025-07-18T14:22:16
+** sc2c.log
+*************************************************************$

@@ -1,0 +1,16 @@
+$********** SCADE Suite KCG 32-bit 6.6.4 (build i3) **********
+** Command: kcg664.exe -config C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG/config.txt
+** Generation date: 2025-07-18T14:22:13
+*************************************************************$
+*** Type Warning (WAR_151): Internal state expected
+  at file C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1\Operator5.xscade, line 2, character 230
+  at path Package_convolution::VectorAbs/
+ Node VectorAbs has no internal state
+ (it should probably be declared as a function)
+1 warning was found
+No error was found
+No failure occurred
+$********** SCADE Suite KCG 32-bit 6.6.4 (build i3) **********
+** kcg.log
+** Generation date: 2025-07-18T14:22:15
+*************************************************************$

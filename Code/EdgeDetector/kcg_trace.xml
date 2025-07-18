@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <Model date="" commandLine="">
+    <Option name="use_types" value="#off#"/>
+    <Option name="imported_root_package" value="#off#"/>
+    <Option name="root_package" value="#off#"/>
+    <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <Option name="state_vector" value="#off#"/>
+    <Option name="static" value="#off#"/>
+    <Option name="separate_io_all" value="#off#"/>
+    <Option name="no_separate_io" value="#off#"/>
+    <Option name="separate_io" value="#off#"/>
+    <Option name="warn_error" value="#off#"/>
+    <Option name="short_circuit" value="#off#"/>
+    <Option name="wrap_c_ops" value="#off#"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v251/SCADE/SCADE/libraries/SC65/libmath/math.xscade"/>
+    <Option name="input_file" value="C:/Program Files/ANSYS Inc/v251/SCADE/SCADE/libraries/SC65/libmath/vect.xscade"/>
+    <Option name="input_file" value="C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Package21.xscade"/>
+    <Option name="input_file" value="C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/Package5.xscade"/>
+    <Option name="input_file" value="C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/WCU.xscade"/>
+    <Option name="probes" value="#off#"/>
+    <Option name="debug" value="#off#"/>
+    <Option name="no_observe" value="#off#"/>
+    <Option name="observe" value="#off#"/>
+    <Option name="user_config" value="./user_macros.h"/>
+    <Option name="input_threshold" value="#off#"/>
+    <Option name="header" value="#off#"/>
+    <Option name="significance_length" value="31"/>
+    <Option name="name_length" value="200"/>
+    <Option name="globals_prefix" value="#off#"/>
+    <Option name="keep_asserts" value="#off#"/>
+    <Option name="global_root_context" value="#off#"/>
+    <Option name="expall" value="#off#"/>
+    <Option name="noexp" value="#off#"/>
+    <Option name="exp" value="#off#"/>
+    <Option name="target_dir" value="C:/Users/mbda/Documents/GitHub/SCADE_project/prova_1/Prova_1/KCG"/>
+    <Option name="target" value="C"/>
+    <Option name="root" value="Package_convolution::edgeDetector"/>
+    <Option name="auth" value="#off#"/>
+    <Package scadeName="State_Machine_TI">
+      <NamedType scadeName="Type1" targetName="Type1_State_Machine_TI" refType="Type1_State_Machine_TI"/>
+    </Package>
+    <Package scadeName="Package_convolution">
+      <NoExpNode scadeName="conv32_32" headerFile="conv32_32_Package_convolution.h" targetCycleFct="conv32_32_Package_convolution">
+        <Input scadeName="A" scadeType="int8^(32)^(32)" targetName="A" targetType="array_int8_32_32"/>
+        <Input scadeName="K" scadeType="int8^(3)^(3)" targetName="K" targetType="array_int8_3_3"/>
+        <Output scadeName="M" scadeType="int8^(30)^(30)" targetName="M" targetType="array_int8_30_30"/>
+      </NoExpNode>
+      <RootNode scadeName="edgeDetector" headerFile="edgeDetector_Package_convolution.h" targetCycleFct="edgeDetector_Package_convolution" targetInitFct="edgeDetector_reset_Package_convolution" targetInitializationFct="edgeDetector_init_Package_convolution">
+        <Output scadeName="Output_orizzontale" scadeType="int8^(30)^(30)" targetName="Output_orizzontale" targetType="array_int8_30_30" inCtx="true"/>
+        <Output scadeName="Output_verticale" scadeType="int8^(30)^(30)" targetName="Output_verticale" targetType="array_int8_30_30" inCtx="true"/>
+        <Output scadeName="Output_abs_verticale" scadeType="int8^(30)^(30)" targetName="Output_abs_verticale" targetType="array_int8_30_30" inCtx="true"/>
+        <Output scadeName="Output_abs_orizzontale" scadeType="int8^(30)^(30)" targetName="Output_abs_orizzontale" targetType="array_int8_30_30" inCtx="true"/>
+        <Output scadeName="edge_map" scadeType="int8^(30)^(30)" targetName="edge_map" targetType="array_int8_30_30" inCtx="true"/>
+        <NodeInstance instName="1" scadeName="Package_convolution::conv32_32" refName="conv32_32_Package_convolution"/>
+        <NodeInstance instName="2" scadeName="Package_convolution::conv32_32" refName="conv32_32_Package_convolution"/>
+        <NodeInstance instName="1" scadeName="Package_convolution::matrixAbs" refName="matrixAbs_Package_convolution_30"/>
+        <NodeInstance instName="3" scadeName="Package_convolution::matrixAbs" refName="matrixAbs_Package_convolution_30"/>
+        <NodeInstance instName="1" scadeName="vect::MatAdd" refName="MatAdd_vect_int8_30_30"/>
+        <OutCtxType targetName="outC_edgeDetector_Package_convolution"/>
+      </RootNode>
+      <NoExpNode scadeName="matrixAbs" headerFile="matrixAbs_Package_convolution_30.h" targetCycleFct="matrixAbs_Package_convolution_30">
+        <Input scadeName="matrix_inp" scadeType="int8^(30)^(30)" targetName="matrix_inp_30" targetType="array_int8_30_30"/>
+        <Output scadeName="matrix_out" scadeType="int8^(30)^(30)" targetName="matrix_out_30" targetType="array_int8_30_30"/>
+        <Iterator iteratorKind="map" scadeSize="30" targetSize="30">
+          <NodeInstance instName="1" scadeName="Package_convolution::VectorAbs" refName="VectorAbs_Package_convolution_30"/>
+        </Iterator>
+      </NoExpNode>
+      <NoExpNode scadeName="VectorAbs" headerFile="VectorAbs_Package_convolution_30.h" targetCycleFct="VectorAbs_Package_convolution_30">
+        <Input scadeName="vect_in" scadeType="int8^(30)" targetName="vect_in_30" targetType="array_int8_30"/>
+        <Output scadeName="vect_out" scadeType="int8^(30)" targetName="vect_out_30" targetType="array_int8_30"/>
+        <Iterator iteratorKind="map" scadeSize="30" targetSize="30">
+          <NodeInlining instName="1" scadeName="math::Abs"/>
+        </Iterator>
+      </NoExpNode>
+    </Package>
+    <Package scadeName="vect">
+      <NoExpNode scadeName="MatAdd" headerFile="MatAdd_vect_int8_30_30.h" targetCycleFct="MatAdd_vect_int8_30_30">
+        <Input scadeName="A" scadeType="int8^(30)^(30)" targetName="A_int8_30_30" targetType="array_int8_30_30"/>
+        <Input scadeName="B" scadeType="int8^(30)^(30)" targetName="B_int8_30_30" targetType="array_int8_30_30"/>
+        <Output scadeName="C" scadeType="int8^(30)^(30)" targetName="C_int8_30_30" targetType="array_int8_30_30"/>
+        <Iterator iteratorKind="map" scadeSize="30" targetSize="30">
+          <NodeInstance instName="1" scadeName="vect::VectAdd" refName="VectAdd_vect_int8_30"/>
+        </Iterator>
+      </NoExpNode>
+      <NoExpNode scadeName="VectAdd" headerFile="VectAdd_vect_int8_30.h" targetCycleFct="VectAdd_vect_int8_30">
+        <Input scadeName="U" scadeType="int8^(30)" targetName="U_int8_30" targetType="array_int8_30"/>
+        <Input scadeName="V" scadeType="int8^(30)" targetName="V_int8_30" targetType="array_int8_30"/>
+        <Output scadeName="W" scadeType="int8^(30)" targetName="W_int8_30" targetType="array_int8_30"/>
+      </NoExpNode>
+    </Package>
+    <Package scadeName="math">
+      <ExpNode scadeName="Abs"/>
+    </Package>
+    <StructType targetName="Type1_State_Machine_TI" targetCopyFct="kcg_copy_Type1_State_Machine_TI" targetCompFct="kcg_comp_Type1_State_Machine_TI">
+      <Field scadeName="struct_bool" scadeType="kcg_bool" targetName="struct_bool" targetType="kcg_bool"/>
+      <Field scadeName="struct_int" scadeType="kcg_int8" targetName="struct_int" targetType="kcg_int8"/>
+    </StructType>
+    <ArrayType targetName="array_int8_30_30" size="30" cellType="array_int8_30" targetCopyFct="kcg_copy_array_int8_30_30" targetCompFct="kcg_comp_array_int8_30_30"/>
+    <ArrayType targetName="array_int8_30" size="30" cellType="kcg_int8" targetCopyFct="kcg_copy_array_int8_30" targetCompFct="kcg_comp_array_int8_30"/>
+    <ArrayType targetName="array_int8_3_3" size="3" cellType="array_int8_3" targetCopyFct="kcg_copy_array_int8_3_3" targetCompFct="kcg_comp_array_int8_3_3"/>
+    <ArrayType targetName="array_int8_3" size="3" cellType="kcg_int8" targetCopyFct="kcg_copy_array_int8_3" targetCompFct="kcg_comp_array_int8_3"/>
+    <ArrayType targetName="array_int8_32_32" size="32" cellType="array_int8_32" targetCopyFct="kcg_copy_array_int8_32_32" targetCompFct="kcg_comp_array_int8_32_32"/>
+    <ArrayType targetName="array_int8_32" size="32" cellType="kcg_int8" targetCopyFct="kcg_copy_array_int8_32" targetCompFct="kcg_comp_array_int8_32"/>
+    <PredefType scadeName="int8" targetName="kcg_int8"/>
+    <PredefType scadeName="int16" targetName="kcg_int16"/>
+    <PredefType scadeName="int32" targetName="kcg_int32"/>
+    <PredefType scadeName="int64" targetName="kcg_int64"/>
+    <PredefType scadeName="uint8" targetName="kcg_uint8"/>
+    <PredefType scadeName="uint16" targetName="kcg_uint16"/>
+    <PredefType scadeName="uint32" targetName="kcg_uint32"/>
+    <PredefType scadeName="uint64" targetName="kcg_uint64"/>
+    <PredefType scadeName="size" targetName="kcg_size"/>
+    <PredefType scadeName="float32" targetName="kcg_float32"/>
+    <PredefType scadeName="float64" targetName="kcg_float64"/>
+    <PredefType scadeName="bool" targetName="kcg_bool"/>
+    <PredefType scadeName="char" targetName="kcg_char"/>
+  </Model>
