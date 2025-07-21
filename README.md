@@ -1,5 +1,14 @@
 # StateMachineAndMore_DO-178
 Developed and validated code and algorithms for the DO-178C avionics standard. These are just some of the huge amount of trials and projects developed
+# 1. Sobel Edge detector 
+
+
+
+
+
+
+
+
 # 1. State Machine integrated in Texas Istrument board + udp protocol
 Embedded system that:
 - Receives commands via UDP from a Python script.
