@@ -1,10 +1,21 @@
 # StateMachineAndMore_DO-178
 Developed and validated code and algorithms for the DO-178C avionics standard. These are just some of the huge amount of trials and projects developed
-# 1. Sobel Edge detector 
+# 0. Sobel Edge detector 
+The Sobel filter for the edge detector has been implemented within the SCADE tool, thus having generated code certified do-178c, with the possibility of testing it soon (in progress).
 
+The idea was to initially implement it on an MNIST image, in this case number 1, to which it was transformed into a bit-image and submitted as input (32x32) to manage the limitation of SCADE Simulator.
+ ![MNIST Image ](img/edgeDetector_img_minst.PNG)
 
+The edge detector is the Sobel filter, and the following steps were implemented:
+1. Convolution of vertical/horizontal filters to identify variations and the result represents how strongly the image changes in that direction.
+2. Calculating the total gradient = used a formula to approximate it, without square root G(i,j)=∣Gx(i,j)∣+∣Gy(i,j)∣
+3. Edge identification via threshold
 
+Below is the pipeline used for the edge detector : 
+![Edge detector](img/edge_detector_root.PNG)
 
+As is possible to see from the results, you can see how the edges are highlighted:
+![Edge computed](img/edge_computed.PNG)
 
 
 
