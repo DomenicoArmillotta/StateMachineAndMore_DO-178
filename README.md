@@ -78,3 +78,13 @@ The first one on the left is called by itself , so that it performs continuous c
 The second on the right , proceeds in the flow and terminates in the final state.
 The hierarchically higher state machine , will go from state 2 to state 3 , only if one of the checks fails in the iterative SM.
 ![Prallel State Machine](img/State_machine1.PNG)
+
+# Test phase + Coverage report
+To achieve and meet the requirements for DO-178c certification, tests must be performed, initially on hosts,
+with traceability of requirements. As can be seen from the image below, all components were tested, achieving model coverage close to 100%.
+![Test_image](img/Test_image.PNG)
+Each test was carried out using scenarios and checks which, by tracing the finite state machine, checked each step.
+![Scenario_example](img/Scenario_example.PNG)
+And tests can be run all toghether , using the test suite : 
+![test_suite](img/test_suite.PNG)
+
